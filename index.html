@@ -1,0 +1,818 @@
+<!doctype html>
+<html lang="zh-TW">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>臺中市立漢口國民中學</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&display=swap');
+        body { font-family: 'Noto Sans TC', sans-serif; }
+        .text-shadow-lg {
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+        }
+        .text-shadow-md {
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+        }
+        .card-hover {
+            transition: all 0.3s ease;
+        }
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+        }
+        .nav-link {
+            position: relative;
+            transition: color 0.3s ease;
+        }
+        .nav-link:hover {
+            color: #3b82f6;
+        }
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -5px;
+            left: 50%;
+            background-color: #3b82f6;
+            transition: all 0.3s ease;
+        }
+        .nav-link:hover::after {
+            width: 100%;
+            left: 0;
+        }
+    </style>
+  <style>@view-transition { navigation: auto; }</style>
+  <script src="/_sdk/data_sdk.js" type="text/javascript"></script>
+  <script src="/_sdk/element_sdk.js" type="text/javascript"></script>
+ </head>
+ <body class="bg-gray-50"><!-- 導航欄 -->
+  <nav class="bg-white shadow-lg sticky top-0 z-50">
+   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex justify-between items-center h-16">
+     <div class="flex items-center">
+      <div class="flex-shrink-0 flex items-center"><img src="https://hkjh.tc.edu.tw/var/file/109/1109/msys_1109_8616740_74807.png" alt="臺中市立漢口國民中學校徽" class="w-10 h-10 mr-3" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+       <div class="w-10 h-10 bg-blue-600 rounded-full flex items-center justify-center mr-3" style="display: none;"><span class="text-white font-bold text-lg">漢</span>
+       </div>
+       <h1 class="text-xl font-bold text-gray-800">臺中市立漢口國民中學</h1>
+      </div>
+     </div>
+     <div class="hidden md:block">
+      <div class="ml-10 flex items-baseline space-x-8"><a href="#home" class="nav-link text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium">首頁</a> <a href="#about" class="nav-link text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium">學校介紹</a> <a href="#news" class="nav-link text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium">最新消息</a> <a href="#courses" class="nav-link text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium">課程資訊</a> <a href="#links" class="nav-link text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium">其他資訊</a> <a href="#contact" class="nav-link text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium">聯絡我們</a>
+      </div>
+     </div>
+     <div class="md:hidden"><button id="mobile-menu-btn" class="text-gray-700 hover:text-blue-600 focus:outline-none">
+       <svg class="h-6 w-6" fill="none" viewbox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+       </svg></button>
+     </div>
+    </div>
+   </div><!-- 手機版選單 -->
+   <div id="mobile-menu" class="md:hidden hidden bg-white border-t">
+    <div class="px-2 pt-2 pb-3 space-y-1"><a href="#home" class="block px-3 py-2 text-gray-700 hover:text-blue-600">首頁</a> <a href="#about" class="block px-3 py-2 text-gray-700 hover:text-blue-600">學校介紹</a> <a href="#news" class="block px-3 py-2 text-gray-700 hover:text-blue-600">最新消息</a> <a href="#courses" class="block px-3 py-2 text-gray-700 hover:text-blue-600">課程資訊</a> <a href="#links" class="block px-3 py-2 text-gray-700 hover:text-blue-600">其他資訊</a> <a href="#contact" class="block px-3 py-2 text-gray-700 hover:text-blue-600">聯絡我們</a>
+    </div>
+   </div>
+  </nav><!-- 主視覺區 -->
+  <section id="home" class="relative text-white py-20 min-h-[500px] flex items-center" style="background-image: url('https://static.wikia.nocookie.net/worldpedias/images/3/3a/IMAG0593.jpg/revision/latest/scale-to-width-down/1200?cb=&amp;path-prefix=zh'); background-size: cover; background-position: center; background-repeat: no-repeat;">
+   <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+   <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center z-10">
+    <h1 class="text-4xl md:text-6xl font-bold mb-6 text-shadow-lg">臺中市立漢口國民中學</h1>
+    <p class="text-xl md:text-2xl mb-8 opacity-90 text-shadow-md">培育品格、啟發潛能、創造未來</p>
+    <div class="flex flex-col sm:flex-row gap-4 justify-center"><button onclick="scrollToSection('about')" class="bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition duration-300 shadow-lg">了解更多</button> <button onclick="scrollToSection('news')" class="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-blue-600 transition duration-300 shadow-lg">最新消息</button>
+    </div>
+   </div>
+  </section><!-- 學校介紹 -->
+  <section id="about" class="py-16 bg-white">
+   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-12">
+     <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">學校介紹</h2>
+     <p class="text-lg text-gray-600 max-w-3xl mx-auto">漢口國中致力於提供優質的教育環境，培養學生全人發展，成為具有品格、學識與能力的未來公民。</p>
+    </div>
+    <div class="grid md:grid-cols-3 gap-8">
+     <div class="card-hover bg-gradient-to-br from-blue-50 to-blue-100 p-8 rounded-xl">
+      <div class="text-4xl mb-4">
+       🎓
+      </div>
+      <h3 class="text-xl font-semibold mb-3 text-gray-800">優質教學</h3>
+      <p class="text-gray-600">擁有經驗豐富的教師團隊，採用多元化教學方法，激發學生學習興趣與潛能。</p>
+     </div>
+     <div class="card-hover bg-gradient-to-br from-green-50 to-green-100 p-8 rounded-xl">
+      <div class="text-4xl mb-4">
+       🌱
+      </div>
+      <h3 class="text-xl font-semibold mb-3 text-gray-800">品格教育</h3>
+      <p class="text-gray-600">重視學生品格培養，透過各種活動與課程，建立正確的價值觀與人生態度。</p>
+     </div>
+     <div class="card-hover bg-gradient-to-br from-purple-50 to-purple-100 p-8 rounded-xl">
+      <div class="text-4xl mb-4">
+       🚀
+      </div>
+      <h3 class="text-xl font-semibold mb-3 text-gray-800">多元發展</h3>
+      <p class="text-gray-600">提供豐富的社團活動與競賽機會，讓學生在各領域都能發揮所長。</p>
+     </div>
+    </div>
+   </div>
+  </section><!-- 最新消息 -->
+  <section id="news" class="py-16 bg-gray-50">
+   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-12">
+     <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">最新消息</h2>
+     <p class="text-lg text-gray-600">掌握學校最新動態與重要公告</p>
+    </div><!-- 分類標籤 -->
+    <div class="flex flex-wrap justify-center gap-2 mb-8"><button onclick="filterNews('all')" class="news-filter active bg-blue-600 text-white px-4 py-2 rounded-full text-sm font-medium hover:bg-blue-700 transition duration-300">全部</button> <button onclick="filterNews('important')" class="news-filter bg-gray-200 text-gray-700 px-4 py-2 rounded-full text-sm font-medium hover:bg-gray-300 transition duration-300">重要公告</button> <button onclick="filterNews('academic')" class="news-filter bg-gray-200 text-gray-700 px-4 py-2 rounded-full text-sm font-medium hover:bg-gray-300 transition duration-300">教務處公告</button> <button onclick="filterNews('student')" class="news-filter bg-gray-200 text-gray-700 px-4 py-2 rounded-full text-sm font-medium hover:bg-gray-300 transition duration-300">學務處公告</button> <button onclick="filterNews('general')" class="news-filter bg-gray-200 text-gray-700 px-4 py-2 rounded-full text-sm font-medium hover:bg-gray-300 transition duration-300">總務處公告</button> <button onclick="filterNews('counseling')" class="news-filter bg-gray-200 text-gray-700 px-4 py-2 rounded-full text-sm font-medium hover:bg-gray-300 transition duration-300">輔導室公告</button> <button onclick="filterNews('personnel')" class="news-filter bg-gray-200 text-gray-700 px-4 py-2 rounded-full text-sm font-medium hover:bg-gray-300 transition duration-300">人事室公告</button> <button onclick="filterNews('uncategorized')" class="news-filter bg-gray-200 text-gray-700 px-4 py-2 rounded-full text-sm font-medium hover:bg-gray-300 transition duration-300">不分類公告</button>
+    </div>
+    <div id="news-container" class="grid md:grid-cols-2 lg:grid-cols-3 gap-6"><!-- 公告內容將由 JavaScript 動態載入 -->
+    </div>
+    <div class="text-center mt-8 space-x-4"><button onclick="refreshAnnouncements()" class="bg-green-600 text-white px-6 py-3 rounded-lg hover:bg-green-700 transition duration-300">🔄 重新載入</button> <button id="loadMoreBtn" onclick="loadMoreAnnouncements()" class="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition duration-300">查看更多消息</button>
+    </div>
+   </div>
+  </section><!-- 課程資訊 -->
+  <section id="courses" class="py-16 bg-white">
+   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-12">
+     <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">課程資訊</h2>
+     <p class="text-lg text-gray-600">豐富多元的校園活動，培養學生全方位發展</p>
+    </div>
+    <div class="grid lg:grid-cols-3 gap-8"><!-- 學校願景 -->
+     <div class="space-y-6">
+      <h3 class="text-2xl font-semibold text-gray-800 mb-4 flex items-center">
+       <svg class="w-8 h-8 mr-3 text-blue-600" fill="currentColor" viewbox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+       </svg> 學校願景</h3>
+      <div class="bg-gradient-to-br from-blue-50 to-blue-100 p-6 rounded-xl border border-blue-200">
+       <div class="flex items-center mb-3">
+        <svg class="w-6 h-6 mr-3 text-blue-600" fill="currentColor" viewbox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+        </svg>
+        <h4 class="text-lg font-semibold text-gray-800">自律自主</h4>
+       </div>
+       <p class="text-gray-600">做個前瞻的現代人</p>
+      </div>
+      <div class="bg-gradient-to-br from-green-50 to-green-100 p-6 rounded-xl border border-green-200">
+       <div class="flex items-center mb-3">
+        <svg class="w-6 h-6 mr-3 text-green-600" fill="currentColor" viewbox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+        </svg>
+        <h4 class="text-lg font-semibold text-gray-800">適性揚才</h4>
+       </div>
+       <p class="text-gray-600">做個活力的健康人</p>
+      </div>
+      <div class="bg-gradient-to-br from-purple-50 to-purple-100 p-6 rounded-xl border border-purple-200">
+       <div class="flex items-center mb-3">
+        <svg class="w-6 h-6 mr-3 text-purple-600" fill="currentColor" viewbox="0 0 20 20"><path d="M9 4.804A7.968 7.968 0 005.5 4c-1.255 0-2.443.29-3.5.804v10A7.969 7.969 0 015.5 14c1.669 0 3.218.51 4.5 1.385A7.962 7.962 0 0114.5 14c1.255 0 2.443.29 3.5.804v-10A7.968 7.968 0 0014.5 4c-1.255 0-2.443.29-3.5.804V12a1 1 0 11-2 0V4.804z" />
+        </svg>
+        <h4 class="text-lg font-semibold text-gray-800">終身學習</h4>
+       </div>
+       <p class="text-gray-600">做個快樂的讀書人</p>
+      </div>
+     </div><!-- 多元活動 -->
+     <div class="space-y-6">
+      <h3 class="text-2xl font-semibold text-gray-800 mb-4 flex items-center">
+       <svg class="w-8 h-8 mr-3 text-green-600" fill="currentColor" viewbox="0 0 20 20"><path fill-rule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clip-rule="evenodd" />
+       </svg> 多元活動</h3>
+      <div class="bg-gradient-to-br from-orange-50 to-orange-100 p-6 rounded-xl border border-orange-200">
+       <div class="flex items-center mb-3">
+        <svg class="w-6 h-6 mr-3 text-orange-600" fill="currentColor" viewbox="0 0 20 20"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-6-3a2 2 0 11-4 0 2 2 0 014 0zm-2 4a5 5 0 00-4.546 2.916A5.986 5.986 0 0010 16a5.986 5.986 0 004.546-2.084A5 5 0 0010 11z" clip-rule="evenodd" />
+        </svg>
+        <h4 class="text-lg font-semibold text-gray-800">多元社團蓬勃發展</h4>
+       </div>
+       <p class="text-gray-600">豐富多樣的社團活動，讓學生發揮興趣與專長，培養團隊合作精神</p>
+      </div>
+      <div class="bg-gradient-to-br from-pink-50 to-pink-100 p-6 rounded-xl border border-pink-200">
+       <div class="flex items-center mb-3">
+        <svg class="w-6 h-6 mr-3 text-pink-600" fill="currentColor" viewbox="0 0 20 20"><path fill-rule="evenodd" d="M12.395 2.553a1 1 0 00-1.45-.385c-.345.23-.614.558-.822.88-.214.33-.403.713-.57 1.116-.334.804-.614 1.768-.84 2.734a31.365 31.365 0 00-.613 3.58 2.64 2.64 0 01-.945-1.067c-.328-.68-.398-1.534-.398-2.654A1 1 0 005.05 6.05 6.981 6.981 0 003 11a7 7 0 1011.95-4.95c-.592-.591-.98-.985-1.348-1.467-.363-.476-.724-1.063-1.207-2.03zM12.12 15.12A3 3 0 017 13s.879.5 2.5.5c0-1 .5-4 1.25-4.5.5 1 .786 1.293 1.371 1.879A2.99 2.99 0 0113 13a2.99 2.99 0 01-.879 2.121z" clip-rule="evenodd" />
+        </svg>
+        <h4 class="text-lg font-semibold text-gray-800">校慶結合學科闖關</h4>
+       </div>
+       <p class="text-gray-600">創新的校慶活動設計，結合各學科知識的趣味闖關遊戲</p>
+      </div>
+      <div class="bg-gradient-to-br from-indigo-50 to-indigo-100 p-6 rounded-xl border border-indigo-200">
+       <div class="flex items-center mb-3">
+        <svg class="w-6 h-6 mr-3 text-indigo-600" fill="currentColor" viewbox="0 0 20 20"><path d="M9 4.804A7.968 7.968 0 005.5 4c-1.255 0-2.443.29-3.5.804v10A7.969 7.969 0 015.5 14c1.669 0 3.218.51 4.5 1.385A7.962 7.962 0 0114.5 14c1.255 0 2.443.29 3.5.804v-10A7.968 7.968 0 0014.5 4c-1.255 0-2.443.29-3.5.804V12a1 1 0 11-2 0V4.804z" />
+        </svg>
+        <h4 class="text-lg font-semibold text-gray-800">全校好書OPEN分享活動</h4>
+       </div>
+       <p class="text-gray-600">推廣閱讀風氣，師生共同分享好書，營造書香校園氛圍</p>
+      </div>
+     </div><!-- 活化教學 -->
+     <div class="space-y-6">
+      <h3 class="text-2xl font-semibold text-gray-800 mb-4 flex items-center">
+       <svg class="w-8 h-8 mr-3 text-purple-600" fill="currentColor" viewbox="0 0 20 20"><path d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3z" /> <path d="M6 8a2 2 0 11-4 0 2 2 0 014 0zM16 18v-3a5.972 5.972 0 00-.75-2.906A3.005 3.005 0 0119 15v3h-3zM4.75 12.094A5.973 5.973 0 004 15v3H1v-3a3 3 0 013.75-2.906z" />
+       </svg> 活化教學</h3>
+      <div class="bg-gradient-to-br from-cyan-50 to-cyan-100 p-6 rounded-xl border border-cyan-200">
+       <div class="flex items-center mb-3">
+        <svg class="w-6 h-6 mr-3 text-cyan-600" fill="currentColor" viewbox="0 0 20 20"><path fill-rule="evenodd" d="M7 2a1 1 0 00-.707 1.707L7 4.414v3.758a1 1 0 01-.293.707l-4 4C.817 14.769 2.156 18 4.828 18h10.343c2.673 0 4.012-3.231 2.122-5.121l-4-4A1 1 0 0113 8.172V4.414l.707-.707A1 1 0 0013 2H7zm2 6.172V4h2v4.172a3 3 0 00.879 2.12l1.027 1.028a4 4 0 00-2.171.102l-.47.156a4 4 0 01-2.53 0l-.563-.187a1.993 1.993 0 00-.114-.035l1.063-1.063A3 3 0 009 8.172z" clip-rule="evenodd" />
+        </svg>
+        <h4 class="text-lg font-semibold text-gray-800">迎接2030雙語國家</h4>
+       </div>
+       <p class="text-gray-600">試辦教育部雙語課程(家政、美術、表演藝術課)，安排外籍師資入校教學、加強聽說能力</p>
+      </div>
+      <div class="bg-gradient-to-br from-emerald-50 to-emerald-100 p-6 rounded-xl border border-emerald-200">
+       <div class="flex items-center mb-3">
+        <svg class="w-6 h-6 mr-3 text-emerald-600" fill="currentColor" viewbox="0 0 20 20"><path fill-rule="evenodd" d="M3 6a3 3 0 013-3h10a1 1 0 01.8 1.6L14.25 8l2.55 3.4A1 1 0 0116 13H6a1 1 0 00-1 1v3a1 1 0 11-2 0V6z" clip-rule="evenodd" />
+        </svg>
+        <h4 class="text-lg font-semibold text-gray-800">國際教育旅行</h4>
+       </div>
+       <p class="text-gray-600">與日本沖繩縣宮古島下地中學締結姊妹校已20多年，每年暑假進行文化交流，開闊學生國際視野</p>
+      </div>
+      <div class="bg-gradient-to-br from-teal-50 to-teal-100 p-6 rounded-xl border border-teal-200">
+       <div class="flex items-center mb-3">
+        <svg class="w-6 h-6 mr-3 text-teal-600" fill="currentColor" viewbox="0 0 20 20"><path fill-rule="evenodd" d="M3 17a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm3.293-7.707a1 1 0 011.414 0L9 10.586V3a1 1 0 112 0v7.586l1.293-1.293a1 1 0 111.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414z" clip-rule="evenodd" />
+        </svg>
+        <h4 class="text-lg font-semibold text-gray-800">班班有冷氣</h4>
+       </div>
+       <p class="text-gray-600">環境舒適、樂活學習</p>
+      </div>
+     </div>
+    </div>
+   </div>
+  </section><!-- 其他資訊 -->
+  <section id="links" class="py-16 bg-gray-50">
+   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-12">
+     <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">其他資訊</h2>
+     <p class="text-lg text-gray-600">快速存取重要的教育相關網站、學校社群與宣導影片</p>
+    </div><!-- 宣導影片區塊 -->
+    <div class="mb-16">
+     <h3 class="text-2xl font-semibold text-gray-800 mb-8 text-center">宣導影片</h3>
+     <div class="grid md:grid-cols-3 gap-8">
+      <div class="bg-white rounded-xl shadow-md overflow-hidden card-hover">
+       <div class="aspect-video"><iframe src="https://www.youtube.com/embed/Or1CeKrI0OE?si=xkCRjzyNH2Dh-JBd" title="宣導影片1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen class="w-full h-full"> </iframe>
+       </div>
+       <div class="p-4">
+        <h4 class="font-semibold text-gray-800 text-center">重要宣導影片</h4>
+       </div>
+      </div>
+      <div class="bg-white rounded-xl shadow-md overflow-hidden card-hover">
+       <div class="aspect-video"><iframe src="https://www.youtube.com/embed/kKzFdVguWGA?si=4GwRXqoihcuKGUnu" title="宣導影片2" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen class="w-full h-full"> </iframe>
+       </div>
+       <div class="p-4">
+        <h4 class="font-semibold text-gray-800 text-center">教育宣導影片</h4>
+       </div>
+      </div>
+      <div class="bg-white rounded-xl shadow-md overflow-hidden card-hover">
+       <div class="aspect-video"><iframe src="https://www.youtube.com/embed/KpTOQTEOwmI?si=nEhD4_woJjLUhVk0" title="宣導影片3" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen class="w-full h-full"> </iframe>
+       </div>
+       <div class="p-4">
+        <h4 class="font-semibold text-gray-800 text-center">校園安全宣導</h4>
+       </div>
+      </div>
+     </div>
+    </div><!-- 學校行事曆區塊 -->
+    <div class="mb-16">
+     <h3 class="text-2xl font-semibold text-gray-800 mb-8 text-center">學校行事曆</h3>
+     <div class="bg-white rounded-xl shadow-md overflow-hidden"><iframe src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=Asia%2FTaipei&amp;src=Z20uaGtqaC50Yy5lZHUudHdfM2M5djVwNGFxNmFyNG52bTFqaXA2c2JyNDRAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;src=Z20uaGtqaC50Yy5lZHUudHdfamozaTNvbzZhdmRhMjRhMmg4cWc3ZHFwNTRAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;src=Z20uaGtqaC50Yy5lZHUudHdfZTdtaXA3aXZxdTA2dGkxc201cTc1NmppOTRAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;src=Z20uaGtqaC50Yy5lZHUudHdfN2ZjZnZtMDc2OG1laWR2MW9sbjZkdDZpNzRAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;src=emgudGFpd2FuI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&amp;color=%23616161&amp;color=%23A79B8E&amp;color=%23795548&amp;color=%239E69AF&amp;color=%23009688&amp;showTitle=0" style="border: 0" width="100%" height="600" frameborder="0" scrolling="no"> </iframe>
+     </div>
+     <div class="text-center mt-4">
+      <p class="text-gray-600 text-sm">📅 點擊日期可查看詳細活動資訊</p>
+     </div>
+    </div>
+    <div class="grid lg:grid-cols-2 gap-12 mb-12"><!-- 常用連結區塊 -->
+     <div>
+      <h3 class="text-2xl font-semibold text-gray-800 mb-6 text-center">常用連結</h3>
+      <div class="grid md:grid-cols-2 gap-4"><a href="https://school.tc.edu.tw/193519" target="_blank" class="card-hover bg-white border border-gray-200 rounded-xl p-6 text-center hover:border-blue-300 transition duration-300 shadow-sm">
+        <div class="w-12 h-12 mx-auto mb-3 bg-blue-100 rounded-full flex items-center justify-center">
+         <svg class="w-6 h-6 text-blue-600" fill="currentColor" viewbox="0 0 20 20"><path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z" />
+         </svg>
+        </div><h4 class="text-lg font-semibold text-gray-800 mb-2">校務系統</h4><p class="text-gray-600 text-sm">漢口國中校務系統</p></a> <a href="https://pemis.taichung.gov.tw/login.aspx" target="_blank" class="card-hover bg-white border border-gray-200 rounded-xl p-6 text-center hover:border-green-300 transition duration-300 shadow-sm">
+        <div class="w-12 h-12 mx-auto mb-3 bg-green-100 rounded-full flex items-center justify-center">
+         <svg class="w-6 h-6 text-green-600" fill="currentColor" viewbox="0 0 20 20"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+         </svg>
+        </div><h4 class="text-lg font-semibold text-gray-800 mb-2">雲瑞差勤管理系統</h4><p class="text-gray-600 text-sm">教職員差勤管理系統</p></a> <a href="http://odisedu.taichung.gov.tw/" target="_blank" class="card-hover bg-white border border-gray-200 rounded-xl p-6 text-center hover:border-purple-300 transition duration-300 shadow-sm">
+        <div class="w-12 h-12 mx-auto mb-3 bg-purple-100 rounded-full flex items-center justify-center">
+         <svg class="w-6 h-6 text-purple-600" fill="currentColor" viewbox="0 0 20 20"><path d="M3 4a1 1 0 011-1h12a1 1 0 011 1v2a1 1 0 01-1 1H4a1 1 0 01-1-1V4zM3 10a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H4a1 1 0 01-1-1v-6zM14 9a1 1 0 00-1 1v6a1 1 0 001 1h2a1 1 0 001-1v-6a1 1 0 00-1-1h-2z" />
+         </svg>
+        </div><h4 class="text-lg font-semibold text-gray-800 mb-2">公文整合系統</h4><p class="text-gray-600 text-sm">公文收發管理系統</p></a> <a href="https://service.tc.edu.tw/" target="_blank" class="card-hover bg-white border border-gray-200 rounded-xl p-6 text-center hover:border-yellow-300 transition duration-300 shadow-sm">
+        <div class="w-12 h-12 mx-auto mb-3 bg-yellow-100 rounded-full flex items-center justify-center">
+         <svg class="w-6 h-6 text-yellow-600" fill="currentColor" viewbox="0 0 20 20"><path fill-rule="evenodd" d="M11.49 3.17c-.38-1.56-2.6-1.56-2.98 0a1.532 1.532 0 01-2.286.948c-1.372-.836-2.942.734-2.106 2.106.54.886.061 2.042-.947 2.287-1.561.379-1.561 2.6 0 2.978a1.532 1.532 0 01.947 2.287c-.836 1.372.734 2.942 2.106 2.106a1.532 1.532 0 012.287.947c.379 1.561 2.6 1.561 2.978 0a1.533 1.533 0 012.287-.947c1.372.836 2.942-.734 2.106-2.106a1.533 1.533 0 01.947-2.287c1.561-.379 1.561-2.6 0-2.978a1.532 1.532 0 01-.947-2.287c.836-1.372-.734-2.942-2.106-2.106a1.532 1.532 0 01-2.287-.947zM10 13a3 3 0 100-6 3 3 0 000 6z" clip-rule="evenodd" />
+         </svg>
+        </div><h4 class="text-lg font-semibold text-gray-800 mb-2">教育服務</h4><p class="text-gray-600 text-sm">臺中市教育服務平台</p></a> <a href="https://read.moe.edu.tw/193519/library" target="_blank" class="card-hover bg-white border border-gray-200 rounded-xl p-6 text-center hover:border-indigo-300 transition duration-300 shadow-sm">
+        <div class="w-12 h-12 mx-auto mb-3 bg-indigo-100 rounded-full flex items-center justify-center">
+         <svg class="w-6 h-6 text-indigo-600" fill="currentColor" viewbox="0 0 20 20"><path d="M9 4.804A7.968 7.968 0 005.5 4c-1.255 0-2.443.29-3.5.804v10A7.969 7.969 0 015.5 14c1.669 0 3.218.51 4.5 1.385A7.962 7.962 0 0114.5 14c1.255 0 2.443.29 3.5.804v-10A7.968 7.968 0 0014.5 4c-1.255 0-2.443.29-3.5.804V12a1 1 0 11-2 0V4.804z" />
+         </svg>
+        </div><h4 class="text-lg font-semibold text-gray-800 mb-2">教育部圖書館借閱系統</h4><p class="text-gray-600 text-sm">圖書借閱管理系統</p></a> <a href="http://hkjhtc.ailead365.com/" target="_blank" class="card-hover bg-white border border-gray-200 rounded-xl p-6 text-center hover:border-red-300 transition duration-300 shadow-sm">
+        <div class="w-12 h-12 mx-auto mb-3 bg-red-100 rounded-full flex items-center justify-center">
+         <svg class="w-6 h-6 text-red-600" fill="currentColor" viewbox="0 0 20 20"><path fill-rule="evenodd" d="M3 5a2 2 0 012-2h10a2 2 0 012 2v8a2 2 0 01-2 2h-2.22l.123.489.804.804A1 1 0 0113 18H7a1 1 0 01-.707-1.707l.804-.804L7.22 15H5a2 2 0 01-2-2V5zm5.771 7H5V5h10v7H8.771z" clip-rule="evenodd" />
+         </svg>
+        </div><h4 class="text-lg font-semibold text-gray-800 mb-2">學習平台</h4><p class="text-gray-600 text-sm">線上學習管理系統</p></a>
+      </div>
+     </div><!-- Facebook粉絲專頁區塊 -->
+     <div>
+      <h3 class="text-2xl font-semibold text-gray-800 mb-6 text-center">Facebook粉絲專頁</h3>
+      <div class="bg-white rounded-xl shadow-md overflow-hidden"><iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fhkjh.tc.edu.tw%2F&amp;tabs=timeline&amp;width=800&amp;height=380&amp;small_header=false&amp;adapt_container_width=true&amp;hide_cover=false&amp;show_facepile=true" width="100%" height="380" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"> </iframe>
+      </div>
+     </div>
+    </div>
+   </div>
+  </section><!-- 聯絡我們 -->
+  <section id="contact" class="py-16 bg-gray-800 text-white">
+   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-12">
+     <h2 class="text-3xl md:text-4xl font-bold mb-4">聯絡我們</h2>
+     <p class="text-lg text-gray-300">歡迎與我們聯繫，我們很樂意為您服務</p>
+    </div>
+    <div class="grid md:grid-cols-2 gap-12">
+     <div>
+      <h3 class="text-xl font-semibold mb-6">學校資訊</h3>
+      <div class="space-y-4">
+       <div class="flex items-start">
+        <div class="text-blue-400 mr-3 mt-1">
+         📍
+        </div>
+        <div>
+         <p class="font-medium">地址</p>
+         <p class="text-gray-300">40756 臺中市漢口路一段54-1號</p>
+        </div>
+       </div>
+       <div class="flex items-start">
+        <div class="text-blue-400 mr-3 mt-1">
+         📞
+        </div>
+        <div>
+         <p class="font-medium">電話</p>
+         <p class="text-gray-300">(04) 2313-0511</p>
+        </div>
+       </div>
+       <div class="flex items-start">
+        <div class="text-blue-400 mr-3 mt-1">
+         📠
+        </div>
+        <div>
+         <p class="font-medium">傳真</p>
+         <p class="text-gray-300">(04) 2313-3138</p>
+        </div>
+       </div>
+       <div class="flex items-start">
+        <div class="text-blue-400 mr-3 mt-1">
+         📧
+        </div>
+        <div>
+         <p class="font-medium">電子信箱</p>
+         <p class="text-gray-300">hkjh@tc.edu.tw</p>
+        </div>
+       </div>
+       <div class="flex items-start">
+        <div class="text-blue-400 mr-3 mt-1">
+         🏢
+        </div>
+        <div>
+         <p class="font-medium">統一編號</p>
+         <p class="text-gray-300">77599173</p>
+        </div>
+       </div>
+      </div>
+     </div>
+     <div>
+      <h3 class="text-xl font-semibold mb-6">各處室分機</h3>
+      <div class="space-y-3 mb-8">
+       <div class="flex justify-between items-center bg-gray-700 px-4 py-2 rounded"><span class="text-gray-300">教務處</span> <span class="text-white font-medium">710-713</span>
+       </div>
+       <div class="flex justify-between items-center bg-gray-700 px-4 py-2 rounded"><span class="text-gray-300">學務處</span> <span class="text-white font-medium">720-723</span>
+       </div>
+       <div class="flex justify-between items-center bg-gray-700 px-4 py-2 rounded"><span class="text-gray-300">總務處</span> <span class="text-white font-medium">730-733</span>
+       </div>
+       <div class="flex justify-between items-center bg-gray-700 px-4 py-2 rounded"><span class="text-gray-300">輔導室</span> <span class="text-white font-medium">740-743</span>
+       </div>
+       <div class="flex justify-between items-center bg-gray-700 px-4 py-2 rounded"><span class="text-gray-300">人事室</span> <span class="text-white font-medium">750</span>
+       </div>
+       <div class="flex justify-between items-center bg-gray-700 px-4 py-2 rounded"><span class="text-gray-300">會計室</span> <span class="text-white font-medium">760</span>
+       </div>
+       <div class="flex justify-between items-center bg-gray-700 px-4 py-2 rounded"><span class="text-gray-300">資訊組</span> <span class="text-white font-medium">714</span>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </section><!-- 消息詳情彈窗 -->
+  <div id="newsModal" class="fixed inset-0 bg-black bg-opacity-50 z-50 hidden flex items-center justify-center p-4">
+   <div class="bg-white rounded-2xl shadow-2xl w-full max-w-4xl max-h-[90vh] flex flex-col animate-fade-in"><!-- 頂部標題區 -->
+    <div class="relative bg-gradient-to-r from-blue-600 via-blue-700 to-indigo-700 text-white rounded-t-2xl px-8 py-6">
+     <div class="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-blue-600/20 to-purple-600/20 rounded-t-2xl"></div>
+     <div class="relative">
+      <div class="flex justify-between items-start mb-4">
+       <div class="flex-1 pr-6">
+        <h1 id="modalTitle" class="text-2xl md:text-3xl font-bold leading-tight mb-3"></h1>
+        <div class="flex flex-wrap gap-2"><span id="modalCategoryBadge" class="bg-white/20 backdrop-blur-sm text-white px-4 py-2 rounded-full text-sm font-medium border border-white/30"></span>
+        </div>
+       </div><button onclick="closeNewsModal()" class="text-white/80 hover:text-white hover:bg-white/10 w-10 h-10 rounded-full flex items-center justify-center transition-all duration-300 text-2xl font-light"> × </button>
+      </div>
+     </div>
+    </div><!-- 內容滾動區域 -->
+    <div class="flex-1 overflow-y-auto bg-gray-50">
+     <div class="p-8 space-y-6"><!-- 公告基本資訊 -->
+      <div class="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden">
+       <div class="bg-gradient-to-r from-gray-50 to-blue-50 px-6 py-4 border-b border-gray-100">
+        <h2 class="text-lg font-semibold text-gray-800 flex items-center">
+         <div class="w-8 h-8 bg-blue-100 rounded-lg flex items-center justify-center mr-3"><span class="text-blue-600 text-sm">📋</span>
+         </div> 公告資訊</h2>
+       </div>
+       <div class="p-6">
+        <div class="grid md:grid-cols-3 gap-6">
+         <div class="bg-gray-50 rounded-lg p-4">
+          <div class="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-2">
+           訊息分類
+          </div>
+          <div id="modalCategory" class="text-gray-900 font-semibold text-lg"></div>
+         </div>
+         <div class="bg-gray-50 rounded-lg p-4">
+          <div class="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-2">
+           公告單位
+          </div>
+          <div id="modalDepartment" class="text-gray-900 font-semibold text-lg"></div>
+         </div>
+         <div class="bg-gray-50 rounded-lg p-4">
+          <div class="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-2">
+           日期起迄
+          </div>
+          <div id="modalDateRange" class="text-gray-900 font-semibold text-lg"></div>
+         </div>
+        </div>
+       </div>
+      </div><!-- 訊息內容 -->
+      <div class="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden">
+       <div class="bg-gradient-to-r from-gray-50 to-green-50 px-6 py-4 border-b border-gray-100">
+        <h2 class="text-lg font-semibold text-gray-800 flex items-center">
+         <div class="w-8 h-8 bg-green-100 rounded-lg flex items-center justify-center mr-3"><span class="text-green-600 text-sm">📄</span>
+         </div> 訊息內容</h2>
+       </div>
+       <div class="p-6">
+        <div id="modalContent" class="text-gray-700 leading-relaxed whitespace-pre-line text-base bg-gray-50 rounded-lg p-6 min-h-[200px]"></div>
+       </div>
+      </div><!-- 操作提示 -->
+      <div class="bg-blue-50 border border-blue-200 rounded-xl p-4">
+       <div class="flex items-center text-blue-700">
+        <div class="w-6 h-6 bg-blue-200 rounded-full flex items-center justify-center mr-3"><span class="text-blue-600 text-xs">💡</span>
+        </div><span class="text-sm font-medium">提示：您可以按 ESC 鍵快速關閉此視窗</span>
+       </div>
+      </div>
+     </div>
+    </div><!-- 底部操作區 -->
+    <div class="bg-white border-t border-gray-200 rounded-b-2xl px-8 py-6">
+     <div class="flex justify-between items-center">
+      <div class="flex items-center text-gray-500 text-sm"><span class="w-2 h-2 bg-green-400 rounded-full mr-2"></span> 公告詳情檢視模式
+      </div>
+      <div class="flex gap-3"><button onclick="window.print()" class="bg-gray-100 text-gray-700 px-6 py-3 rounded-lg hover:bg-gray-200 transition duration-300 font-medium flex items-center"> <span class="mr-2">🖨️</span> 列印 </button> <button onclick="closeNewsModal()" class="bg-blue-600 text-white px-8 py-3 rounded-lg hover:bg-blue-700 transition duration-300 font-medium shadow-md"> 關閉 </button>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+  <style>
+        @keyframes fade-in {
+            from {
+                opacity: 0;
+                transform: scale(0.95) translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1) translateY(0);
+            }
+        }
+        
+        .animate-fade-in {
+            animation: fade-in 0.3s ease-out;
+        }
+        
+        #newsModal {
+            backdrop-filter: blur(4px);
+        }
+        
+        /* 自定義滾動條 */
+        #newsModal .overflow-y-auto::-webkit-scrollbar {
+            width: 6px;
+        }
+        
+        #newsModal .overflow-y-auto::-webkit-scrollbar-track {
+            background: #f1f5f9;
+            border-radius: 3px;
+        }
+        
+        #newsModal .overflow-y-auto::-webkit-scrollbar-thumb {
+            background: #cbd5e1;
+            border-radius: 3px;
+        }
+        
+        #newsModal .overflow-y-auto::-webkit-scrollbar-thumb:hover {
+            background: #94a3b8;
+        }
+    </style><!-- 頁尾 -->
+  <footer class="bg-gray-900 text-gray-300 py-8">
+   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center">
+     <div class="flex items-center justify-center mb-4"><img src="https://hkjh.tc.edu.tw/var/file/109/1109/msys_1109_8616740_74807.png" alt="臺中市立漢口國民中學校徽" class="w-8 h-8 mr-2" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+      <div class="w-8 h-8 bg-blue-600 rounded-full flex items-center justify-center mr-2" style="display: none;"><span class="text-white font-bold">漢</span>
+      </div><span class="text-lg font-semibold">臺中市立漢口國民中學</span>
+     </div>
+     <p class="text-sm">© 2025 臺中市立漢口國民中學 版權所有</p>
+     <p class="text-xs mt-2 text-gray-400">本網站測試中，實際資訊請以學校官方公告為準</p>
+     <p class="text-xs mt-1 text-gray-500">本網站由三年一班8號製作 1120008</p>
+    </div>
+   </div>
+  </footer>
+  <script>
+        // 手機版選單切換
+        document.getElementById('mobile-menu-btn').addEventListener('click', function() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // 平滑滾動到指定區域
+        function scrollToSection(sectionId) {
+            const element = document.getElementById(sectionId);
+            element.scrollIntoView({ 
+                behavior: 'smooth',
+                block: 'start'
+            });
+        }
+
+        // 導航連結點擊事件
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href').substring(1);
+                scrollToSection(targetId);
+                
+                // 關閉手機版選單
+                document.getElementById('mobile-menu').classList.add('hidden');
+            });
+        });
+
+        // 滾動時導航欄效果
+        window.addEventListener('scroll', function() {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 100) {
+                nav.classList.add('shadow-xl');
+            } else {
+                nav.classList.remove('shadow-xl');
+            }
+        });
+
+        // 全域變數追蹤載入狀態
+        let currentPage = 1;
+        let allAnnouncements = [];
+        let isLoading = false;
+
+        // 公告抓取功能
+        async function fetchAnnouncements(maxPages = 9, targetCount = 10, isLoadMore = false) {
+            if (isLoading) return;
+            isLoading = true;
+
+            const results = [];
+            let page = isLoadMore ? currentPage : 1;
+            const startPage = page;
+
+            // 如果不是載入更多，清空現有公告並重置狀態
+            if (!isLoadMore) {
+                allAnnouncements = [];
+                currentPage = 1;
+                const newsContainer = document.getElementById('news-container');
+                newsContainer.innerHTML = '<div class="col-span-full text-center py-8"><div class="inline-block animate-spin rounded-full h-8 w-8 border-b-2 border-blue-600"></div><p class="mt-2 text-gray-600">正在載入最新公告...</p></div>';
+            } else {
+                // 載入更多時顯示載入狀態
+                const loadMoreBtn = document.getElementById('loadMoreBtn');
+                loadMoreBtn.innerHTML = '<div class="inline-block animate-spin rounded-full h-4 w-4 border-b-2 border-white mr-2"></div>載入中...';
+                loadMoreBtn.disabled = true;
+            }
+
+            while (results.length < targetCount && page <= maxPages) {
+                const url = `https://corsproxy.io/?${encodeURIComponent(`https://school.tc.edu.tw/open-message/193519/page/${page}`)}`;
+                
+                try {
+                    const response = await fetch(url);
+                    const html = await response.text();
+
+                    const parser = new DOMParser();
+                    const doc = parser.parseFromString(html, "text/html");
+
+                    const rows = doc.querySelectorAll(".table tbody tr");
+
+                    for (const row of rows) {
+                        const titleTd = row.querySelector("td:nth-child(2)");
+                        const link = titleTd?.querySelector("a");
+
+                        if (titleTd && link) {
+                            const title = titleTd.textContent.trim();
+                            const href = link.getAttribute("href");
+                            const fullUrl = `https://school.tc.edu.tw${href}`;
+
+                            if (!title.includes("內部文件")) {
+                                const detailData = await fetchDetailData(fullUrl);
+                                results.push({ title, url: fullUrl, ...detailData });
+                                if (results.length >= targetCount) break;
+                            }
+                        }
+                    }
+
+                } catch (err) {
+                    console.error(`讀取第 ${page} 頁時出錯：`, err);
+                }
+
+                page++;
+            }
+
+            // 更新全域狀態
+            currentPage = page;
+            if (isLoadMore) {
+                allAnnouncements = [...allAnnouncements, ...results];
+            } else {
+                allAnnouncements = results;
+            }
+
+            // 顯示結果
+            displayAnnouncements(allAnnouncements, isLoadMore);
+
+            // 恢復載入更多按鈕狀態
+            if (isLoadMore) {
+                const loadMoreBtn = document.getElementById('loadMoreBtn');
+                loadMoreBtn.innerHTML = '查看更多消息';
+                loadMoreBtn.disabled = false;
+            }
+
+            isLoading = false;
+        }
+
+        async function fetchDetailData(url) {
+            try {
+                const response = await fetch(`https://corsproxy.io/?${encodeURIComponent(url)}`);
+                const html = await response.text();
+                const parser = new DOMParser();
+                const doc = parser.parseFromString(html, "text/html");
+
+                const data = {};
+
+                const rows = doc.querySelectorAll("table tr");
+
+                for (const tr of rows) {
+                    const th = tr.querySelector("th");
+                    const td = tr.querySelector("td");
+
+                    if (th && td) {
+                        const key = th.textContent.trim();
+                        const val = td.textContent.trim();
+
+                        if (key === "公告單位") data.公告單位 = val;
+                        else if (key === "日期起迄") data.日期起迄 = val;
+                        else if (key === "訊息內容") data.訊息內容 = val;
+                        else if (key === "訊息分類") data.訊息分類 = val;
+                    }
+                }
+
+                return data;
+            } catch (err) {
+                console.error(`抓取詳細資料失敗: ${url}`, err);
+                return {};
+            }
+        }
+
+        // 顯示公告
+        function displayAnnouncements(announcements, isLoadMore = false) {
+            const newsContainer = document.getElementById('news-container');
+            
+            if (announcements.length === 0) {
+                newsContainer.innerHTML = '<div class="col-span-full text-center py-8"><p class="text-gray-600">暫無公告資料</p></div>';
+                return;
+            }
+
+            // 如果不是載入更多，清空容器
+            if (!isLoadMore) {
+                newsContainer.innerHTML = '';
+            }
+
+            announcements.forEach((item, index) => {
+                // 如果是載入更多，只顯示新增的項目
+                if (isLoadMore && index < allAnnouncements.length - 10) {
+                    return;
+                }
+
+                const category = getCategoryInfo(item.訊息分類 || item.公告單位 || '不分類公告');
+                const dateRange = formatDateRange(item.日期起迄);
+                
+                const newsItem = document.createElement('div');
+                newsItem.className = 'news-item card-hover bg-white rounded-xl shadow-md overflow-hidden';
+                newsItem.setAttribute('data-category', category.key);
+                
+                newsItem.innerHTML = `
+                    <div class="p-6">
+                        <div class="flex items-center mb-3">
+                            <span class="${category.bgColor} ${category.textColor} text-xs font-semibold px-2.5 py-0.5 rounded">${category.label}</span>
+                        </div>
+                        <h3 class="text-lg font-semibold mb-2 text-gray-800">${item.title}</h3>
+                        <p class="text-gray-600 text-sm mb-3">📅 ${dateRange}</p>
+                        <button onclick="openNewsModal(\`${item.title.replace(/`/g, '\\`')}\`, \`${category.label}\`, \`${(item.公告單位 || '學校').replace(/`/g, '\\`')}\`, \`${dateRange}\`, \`${(item.訊息內容 || '暫無詳細內容').replace(/`/g, '\\`')}\`, \`${item.url}\`)" class="bg-blue-600 text-white px-4 py-2 rounded-lg text-sm hover:bg-blue-700 transition duration-300">閱讀更多</button>
+                    </div>
+                `;
+                
+                newsContainer.appendChild(newsItem);
+            });
+        }
+
+        // 取得分類資訊
+        function getCategoryInfo(category) {
+            const categoryMap = {
+                '教務處': { key: 'academic', label: '教務處公告', bgColor: 'bg-blue-100', textColor: 'text-blue-800' },
+                '學務處': { key: 'student', label: '學務處公告', bgColor: 'bg-green-100', textColor: 'text-green-800' },
+                '總務處': { key: 'general', label: '總務處公告', bgColor: 'bg-yellow-100', textColor: 'text-yellow-800' },
+                '輔導室': { key: 'counseling', label: '輔導室公告', bgColor: 'bg-purple-100', textColor: 'text-purple-800' },
+                '人事室': { key: 'personnel', label: '人事室公告', bgColor: 'bg-indigo-100', textColor: 'text-indigo-800' },
+                '重要': { key: 'important', label: '重要公告', bgColor: 'bg-red-100', textColor: 'text-red-800' }
+            };
+
+            // 檢查是否包含關鍵字
+            for (const [key, info] of Object.entries(categoryMap)) {
+                if (category.includes(key)) {
+                    return info;
+                }
+            }
+
+            return { key: 'uncategorized', label: '不分類公告', bgColor: 'bg-gray-100', textColor: 'text-gray-800' };
+        }
+
+        // 格式化日期範圍
+        function formatDateRange(dateStr) {
+            if (!dateStr) return '無日期資訊';
+            
+            // 如果包含 ~ 符號，表示有起迄日期
+            if (dateStr.includes('~')) {
+                return dateStr.replace('~', ' - ');
+            }
+            
+            return dateStr;
+        }
+
+        // 清理文字內容，避免特殊字符造成問題
+        function cleanText(text) {
+            if (!text) return '';
+            return text.replace(/`/g, '\\`').replace(/\\/g, '\\\\').replace(/'/g, "\\'").replace(/"/g, '\\"');
+        }
+
+        // 消息分類篩選功能
+        function filterNews(category) {
+            const newsItems = document.querySelectorAll('.news-item');
+            const filterButtons = document.querySelectorAll('.news-filter');
+            
+            // 更新按鈕樣式
+            filterButtons.forEach(btn => {
+                btn.classList.remove('active', 'bg-blue-600', 'text-white');
+                btn.classList.add('bg-gray-200', 'text-gray-700');
+            });
+            
+            event.target.classList.remove('bg-gray-200', 'text-gray-700');
+            event.target.classList.add('active', 'bg-blue-600', 'text-white');
+            
+            // 篩選消息項目
+            newsItems.forEach(item => {
+                if (category === 'all' || item.dataset.category === category) {
+                    item.style.display = 'block';
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+        }
+
+        // 開啟消息詳情彈窗
+        function openNewsModal(title, category, department, dateRange, content, url) {
+            document.getElementById('modalTitle').textContent = title;
+            document.getElementById('modalCategory').textContent = category;
+            document.getElementById('modalCategoryBadge').textContent = category;
+            document.getElementById('modalDepartment').textContent = department || '學校';
+            document.getElementById('modalDateRange').textContent = dateRange || '無日期資訊';
+            
+            document.getElementById('modalContent').textContent = content || '暫無詳細內容';
+            document.getElementById('newsModal').classList.remove('hidden');
+            document.body.style.overflow = 'hidden'; // 防止背景滾動
+        }
+
+        // 關閉消息詳情彈窗
+        function closeNewsModal() {
+            document.getElementById('newsModal').classList.add('hidden');
+            document.body.style.overflow = 'auto'; // 恢復背景滾動
+        }
+
+        // 點擊彈窗背景關閉
+        document.getElementById('newsModal').addEventListener('click', function(e) {
+            if (e.target === this) {
+                closeNewsModal();
+            }
+        });
+
+        // ESC鍵關閉彈窗
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                closeNewsModal();
+            }
+        });
+
+        // 頁面載入時自動抓取公告
+        document.addEventListener('DOMContentLoaded', function() {
+            fetchAnnouncements();
+        });
+
+        // 載入更多公告
+        function loadMoreAnnouncements() {
+            fetchAnnouncements(20, 10, true); // 載入更多10個公告，最多搜尋20頁
+        }
+
+        // 重新載入公告按鈕
+        function refreshAnnouncements() {
+            fetchAnnouncements();
+        }
+    </script>
+ <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9a2910be17974a40',t:'MTc2MzgyMTIwNC4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
